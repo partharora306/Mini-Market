@@ -1,0 +1,124 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:lawngreen;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "header"
+    "main";
+    grid-template-columns: 5fr;
+    grid-template-rows: 5rem 1fr;
+    height: 100%;
+}
+.header{
+    grid-area: header;
+    background-color:rgb(114, 188, 190);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+.brand a{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header-links a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+.header-links a:hover{
+    color:saddlebrown;
+}
+.main{
+    grid-area: main;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products li{
+    list-style: none;
+    padding: 0;
+    flex: 0 1 26rem;
+    margin: 1.2rem;
+    height: 37rem;
+    border-bottom: .1rem gray solid;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+}
+.product-name{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.product-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-mrp{
+    font-size: 1.4rem;
+    color: grey;
+}
+.product-image{
+    max-width: 26rem;
+    max-height: 26rem;
+    
+}
+/* sidebar */
+.brand button{
+    font-size: 3rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-31rem);
+    width: 30rem;
+    padding-left: 1rem;
+    background-color:whitesmoke;
+    height: 100%;
+}
+.sidebar.open
+{
+    transform: translateX(0);
+}
+.sidebar-close-button
+{
+    border-radius: 50%;
+    border: 0.1rem black solid;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    padding-top: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.65rem;
+}

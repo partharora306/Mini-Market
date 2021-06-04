@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Mini Market</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">Mini Market</a>
+                </div>
+                <div class="header-links">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin">Sign Up</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>
+                    SHOP BY CATEGORY
+                </h3>
+                <button onclick="closeMenu()" class="sidebar-close-button">x</button>
+                <ul>
+                    <li>
+                        <a href="index.html">Fruits & vegetables</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Foodgrains, Oil & Masala</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Bakery, Cakes & Dairy</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Beverages</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Cleaning & Household</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Kitchen and Dining Needs</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Eggs, Meat, Fish & Frozen</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/carrot.jpg" alt="carrot"></img>
+                                <div class="product-name"><a href="product.html">Carrot</a></div>
+                                <div class="product-price">Rs 18</div>
+                                <div class="product-mrp"><s>MRP: Rs 25</s></div>
+                            </div>
+                        </li>
+                        </ul>
+                </div>
+            </main>
+        </div>
+        <script>
+            function openMenu()
+            {
+                document.querySelector(".sidebar").classList.add("open")
+            }
+            function closeMenu()
+            {
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+
+</html>
